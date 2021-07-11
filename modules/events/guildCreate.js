@@ -1,6 +1,7 @@
 //IMPORT FILE DATA
 const config = require("../../botconfig/config.json");
 const ee = require("../../botconfig/embed.json");
+const prefix = ".";
 const {
     databasing,
     escapeRegex,
