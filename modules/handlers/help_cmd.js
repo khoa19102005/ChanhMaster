@@ -57,6 +57,7 @@ module.exports = (client, message, args, cmd, prefix) => {
           .addField(`\`${prefix}untrust @User\``, "> *Untrusts!!*", true)
           .addField(`~~\`${prefix}rename <CHANNEL_NAME>\`~~`, "> *~~Đổi tên Channel(20 Sec cooldown)~~*", true)
           .addField(`\`${prefix}limit <UserLimit>\``, "> *Limit lại*", true)
+          .addField(`\`${prefix}rename @User\``, "> *Rename!*", true)
           .addField(`\`${prefix}bitrate <Bitrate in bits>\``, "> *Channel's bitrate*", true)
           .addField(`\`${prefix}vcinvite @User [optional message]\``, "> *Mời vô Voice Channel*", true)
           .addField(`\`${prefix}promote @User\``, "> *Chuyển chủ*", true)
