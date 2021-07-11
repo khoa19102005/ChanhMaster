@@ -27,7 +27,7 @@ function reset_DB(guildid, client) {
 client.settings.set(guildid, {
     prefix: ".",
     channel: "",
-    channelname: "{user}' Room",
+    channelname: "{user}",
     guild: guildid,
 });
 client.settings2.set(guildid, {
