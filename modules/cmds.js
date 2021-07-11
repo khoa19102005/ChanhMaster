@@ -1,5 +1,7 @@
 const config = require("../botconfig/config.json");
 const ee = require("../botconfig/embed.json");
+const prefix = ".";
+
 //import the Discord Library
 const Discord = require("discord.js");
 //Start the module
