@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "**Note this Discord Bot Repository is the Same as for the Public Bot [Channel Master Bot](https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot) if u want to support me, then please [invite](https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot) him!**",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node shard.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
