@@ -658,7 +658,7 @@ module.exports = (client, message, args, cmd, prefix) => {
         .setFooter(ee.footertext, ee.footericon)
       )
     }
-  } else if (command === 'rename') {
+  } else if (cmd === 'rename') {
     let {
       channel
     } = message.member.voice;
@@ -689,22 +689,16 @@ module.exports = (client, message, args, cmd, prefix) => {
         .setFooter(ee.footertext, ee.footericon)
         .setTitle(":x: Phải thêm name")
       );
+    }
     const name = args[0];
 
-    if (!name)
-      return message.channel.send(`${args[0]} không phải tên đúng.`);
-
-    if (!channel)
-      return message.channel.send(
-        `Can't find a voice channel with the ID \`${channel.id}\``,
-      );
-
-    channel
-      .setName(name)
-      .then((newChannel) =>
-        message.channel.send(`Tên mới của kênh là ${newChannel.name}`),
-      )
-      .catch(console.error);
+    channel.setName(name).then(vc => {
+        return message.reply(new Discord.MessageEmbed()
+          .setColor(ee.color)
+          .setTitle(`✅ Đổi tên thành \`${vc.name}\``)
+          .setFooter(ee.footertext, ee.footericon)
+        )
+      })
   }
   else if (cmd === "promote") {
     let {
