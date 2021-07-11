@@ -49,6 +49,9 @@ try {
 
 }
 }
+
+function change_status(){}
+
 //function to check voice channels
 function check_voice_channels(client) {
 let guilds = client.guilds.cache.map(guild => guild.id);
