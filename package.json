@@ -3,20 +3,9 @@
   "version": "1.0.0",
   "description": "**Note this Discord Bot Repository is the Same as for the Public Bot [Channel Master Bot](https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot) if u want to support me, then please [invite](https://discord.com/api/oauth2/authorize?client_id=761247967859965982&permissions=8&scope=bot) him!**",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/khoa19102005/Join-to-Create-Bot-Discord.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/khoa19102005/Join-to-Create-Bot-Discord/issues"
-  },
-  "homepage": "https://github.com/khoa19102005/Join-to-Create-Bot-Discord#readme",
   "dependencies": {
     "colors": "^1.4.0",
     "cpu-stat": "^2.0.1",
