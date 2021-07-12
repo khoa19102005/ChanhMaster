@@ -707,7 +707,7 @@ module.exports = (client, message, args, cmd, prefix) => {
       )
     }
   }
-  else if (cmd === "promote") {
+  else if (cmd === "transfer") {
     let {
       channel
     } = message.member.voice;
