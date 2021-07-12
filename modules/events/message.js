@@ -27,7 +27,7 @@ module.exports = (client, message) => {
     const [, matchedPrefix] = message.content.match(prefixRegex);
     //create the arguments with sliceing of of the rightprefix length
     const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
-    console.log(message.content.slice(matchedPrefix.length).trim());
+    console.log(message.content);
     //creating the cmd argument by shifting the args by 1
     const cmd = args.shift().toLowerCase();
     //if no cmd added return error
