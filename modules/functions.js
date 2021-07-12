@@ -52,7 +52,7 @@ try {
 
 function change_status(client) {
 try {
-client.user.setActivity(`${totalGuilds} servers | ${Math.ceil(totalMembers)} thành viên`, {
+client.user.setActivity(`${totalGuilds} servers`, {
     type: "WATCHING",
     shardID: shard
 });
