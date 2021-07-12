@@ -163,4 +163,17 @@ module.exports = (client, message, args, cmd, prefix) => {
         );
         return;
       } 
+    else if (cmd === "fix") {
+        let {
+              channel
+            } = message.member.voice;
+        if (channel) {
+          message.reply(new Discord.MessageEmbed()
+            .setTitle("<:ChannelMaster:778404076466602024> Fix thành công")
+            .setColor(ee.color)
+            .setDescription(`Nếu bị lỗi hãy thoát ra vào lại \`${channel.name}\`\!`)
+            .setFooter(ee.footertext, ee.footericon)
+          );
+          client.settings.set(message.guild.id, channel.id, `channel`);
+    }
 }
