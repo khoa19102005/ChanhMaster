@@ -50,7 +50,19 @@ try {
 }
 }
 
-function change_status(){}
+function change_status(client) {
+try {
+client.user.setActivity(`${config.prefix}help | ${config.prefix}setup | ${totalGuilds} Guilds | ${Math.ceil(totalMembers)} Members`, {
+    type: "WATCHING",
+    shardID: shard
+});
+} catch (e) {
+    client.user.setActivity(`${config.prefix}help | ${config.prefix}setup | ${client.guilds.cache.size} Guilds | ${Math.ceil(client.users.cache.size)} Members`, {
+        type: "WATCHING",
+        shardID: 0
+    });
+  }
+}
 
 //function to check voice channels
 function check_voice_channels(client) {
