@@ -60,7 +60,7 @@ module.exports = function (client) {
           console.log(`Deleted the Channel: ${vc.name} in: ${vc.guild ? vc.guild.name : "undefined"}`.strikethrough.brightRed)
           client.jointocreatemap.delete(`tempvoicechannel_${oldState.guild.id}_${oldState.channelID}`);
           client.jointocreatemap.delete(`owner_${vc.guild.id}_${vc.id}`);
-          return vc.delete().catch(e => console.log("Couldn't delete room"));
+          return vc.delete().catch(e => console.log("Không thể xoá phòng"));
         } else {
           let perms = vc.permissionOverwrites.map(c => c)
           let owner = false;
@@ -88,8 +88,8 @@ module.exports = function (client) {
                 user.send(new MessageEmbed()
                   .setColor(ee.color)
                   .setFooter(ee.footertext, ee.footericon)
-                  .setTitle("The Owner left, you are now the new one!")
-                  .setDescription(`you now have access to all \`.help voice\` Commands!`))
+                  .setTitle("Chủ phòng đã rời bạn là chủ phòng!")
+                  .setDescription(`bây giờ bạn có quyền truy cập vào tất cả \`.help voice\` lệnh!`))
               })
             } catch {
               /* */
