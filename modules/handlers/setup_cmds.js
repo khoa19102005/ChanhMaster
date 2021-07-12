@@ -167,7 +167,6 @@ module.exports = (client, message, args, cmd, prefix) => {
         let {
               channel
             } = message.member.voice;
-        if (channel) {
           message.reply(new Discord.MessageEmbed()
             .setTitle("<:ChannelMaster:778404076466602024> Fix thành công")
             .setColor(ee.color)
