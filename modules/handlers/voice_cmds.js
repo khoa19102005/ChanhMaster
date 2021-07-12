@@ -689,9 +689,8 @@ module.exports = (client, message, args, cmd, prefix) => {
         .setFooter(ee.footertext, ee.footericon)
         .setTitle(":x: Phải thêm name")
       );
-    const regex = /^.rename ([a-zA-Z]+)(.+?)?$/;
-
-    const name = message.content.match(regex);
+      
+    const name = message.content.slice(7).trim();
 
     channel.setName(name).then(vc => {
         return message.reply(new Discord.MessageEmbed()
