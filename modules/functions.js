@@ -52,12 +52,12 @@ try {
 
 function change_status(client) {
 try {
-client.user.setActivity(`${config.prefix}help | ${config.prefix}setup | ${totalGuilds} Guilds | ${Math.ceil(totalMembers)} Members`, {
+client.user.setActivity(`${totalGuilds} servers | ${Math.ceil(totalMembers)} thành viên`, {
     type: "WATCHING",
     shardID: shard
 });
 } catch (e) {
-    client.user.setActivity(`${config.prefix}help | ${config.prefix}setup | ${client.guilds.cache.size} Guilds | ${Math.ceil(client.users.cache.size)} Members`, {
+    client.user.setActivity(`${client.guilds.cache.size} servers | ${Math.ceil(client.users.cache.size)} thành viên`, {
         type: "WATCHING",
         shardID: 0
     });
