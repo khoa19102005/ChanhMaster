@@ -689,7 +689,6 @@ module.exports = (client, message, args, cmd, prefix) => {
         .setFooter(ee.footertext, ee.footericon)
         .setTitle(":x: Phải thêm name")
       );
-    }
     const name = args[0];
 
     channel.setName(name).then(vc => {
@@ -699,6 +698,14 @@ module.exports = (client, message, args, cmd, prefix) => {
           .setFooter(ee.footertext, ee.footericon)
         )
       })
+    }
+    else {
+      return message.reply(new Discord.MessageEmbed()
+        .setColor(ee.wrongcolor)
+        .setTitle(":x: You have to be in a **temp.** VoiceChannel, for this Command!")
+        .setFooter(ee.footertext, ee.footericon)
+      )
+    }
   }
   else if (cmd === "promote") {
     let {
