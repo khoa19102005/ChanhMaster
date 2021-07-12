@@ -13,7 +13,7 @@ module.exports = client => {
   client.category = {
     "general": ["ping", "support", "server", "tutorial", "video", "info", "stats", "stat", "uptime", "add", "invite", "source", "github"],
     "voice": ["lock", "unlock", "kick", "vcinvite", "vcadd", "voiceinvite", "voiceadd", "ban", "unban", "trust", "untrust", "limit", "bitrate", "promote", "rename"],
-    "setup": ["setup", "setupname", "setup2", "setup2name", "setup3", "setup3name"]
+    "setup": ["setup", "setupname", "setup2", "setup2name", "setup3", "setup3name", "fix"]
   }
   /** ////////////////////////////////////////// *
    * LOG EVERY TIME THE BOT GETS READY and STATUS CHANGE
